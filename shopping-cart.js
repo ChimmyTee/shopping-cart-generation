@@ -1,25 +1,3 @@
-/* Have a pre-populated (hard coded) array of objects as products.
-Your product display should have (not limited to) product image, product name, product price
-All products should be displayed when the page loads
-Using an ‘add to cart’ button, the user should be able to add the products to a shopping cart list
-The shopping cart lists all products and displays a the total price
-
-Stretch Goals
-
-The user should also be able to delete the products from the cart, thus modifying the total price of the cart
-The user should be able to enter a quantity for each product
-
-The code should be readable, reusable, and easy to modify. We're looking for production quality code.
-A detailed Readme file which includes the following: 
-Setup instructions - Write out all of the steps to run your app locally
-Discussion of technologies used - Make a list of the technologies you used including frameworks and libraries.
-A section describing the requirements and how you met them.
-*/
-
-/*
-Step 1: Create a HTML structure of the app. A little forsight, knowing we're gonna use bootstrap cards and bootstrap offCanvas
-*/
-//const offCanvasBody = document.querySelector('.offcanvas-body');
 let cart = [];
 
 const addToCartButtons = document.getElementsByClassName('addToCartButton');
