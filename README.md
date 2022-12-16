@@ -14,5 +14,5 @@ Here are the requirements of the app:
 6. The user can delete products from the cart, thus update the total price of the cart.
 7. The user should be able to enter a quantity for each product.
 
-The app utlitises a system of keeping the 'delete button' and 'add to cart button' consistent and attached a corresponding ID to the button.
+The app utlitises a system of keeping the 'delete button' and 'add to cart button' consistent and attached a corresponding product ID to the button.
 This allows us to easily target product throughout the application.
