@@ -4,7 +4,7 @@ const products = [
         name: 'Washing Machine',
         price: 9.99,
         description: 'washes clothes',
-        imageURL: 'https://th.bing.com/th/id/R.5ff1405d20cbc684c0a514af4c1ac292?rik=Zqi3i3TipeHYSw&riu=http%3a%2f%2fhyderabadboss.com%2fwp-content%2fuploads%2f2016%2f12%2famsungwashingmachine.jpg&ehk=QaC0%2fJ1cSJ%2fVoAtiM7J0e3mtdiuo91QqOpCk6ePN00I%3d&risl=&pid=ImgRaw&r=0'
+        imageURL: 'https://th.bing.com/th/id/OIP.X_FAXSDLxoTApRSvTBrCkgHaHa?pid=ImgDet&rs=1'
     },
     {
         id: 2,
@@ -33,9 +33,8 @@ function render() {
             <h6 class="card-price">Price: $${product.price}</h6>
             <p class="card-text text-truncate"">${product.description}</p>
             <form>
-                <label for="quantity">Quantity:</label>
-                <input name="quantity" type="number">
-            
+                <label for="quantity-${product.id}">Quantity:</label>
+                <input id="quantity-${product.id}" type="number" min="1" max="50" value="1">
                 <button id=${product.id} class="addToCartButton btn btn-primary mt-2" type="submit">Add to Cart</button>
             </form>
         </div>
